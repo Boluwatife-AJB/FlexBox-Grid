@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem;
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 400px;
+  min-width: 200px;
+  max-width: 250px;
+  padding: 1.5rem;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+h2 {
+  font-family: 'Big Shoulders Display', cursive;
+  color: hsl(0, 0%, 95%);
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid hsl(0, 0%, 95%);
+  background-color: hsl(0, 0%, 95%);
+  text-transform: capitalize;
+}
+
+button:hover {
+  background: transparent;
+  color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 95%);
+}
+
+.btn-one {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn-two {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn-three {
+  color: hsl(179, 100%, 13%);
+}
+
+.item-one {
+  background: hsl(31, 77%, 52%);
+}
+
+.item-two {
+  background: hsl(184, 100%, 22%);
+}
+
+.item-three {
+  background: #004241;
+}
+
+a {
+  text-decoration: none;
+  color: tomato;
+}
+
+a:hover {
+  color: #004241;
+}
+
+.btn-grid {
+  margin-top: 40px;
+  padding: 0.8rem 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid #101010;
+  background-color: #101010;
+  text-transform: none;
+}
+
+@media screen and only(max-width: 356px) {
+  .btn-grid {
+    width: 40%;
+    margin: auto;
+  }
+}
+
+.btn-grid:hover {
+  background: transparent;
+  color: #404040;
+  border: 1px solid #404040;
+}
